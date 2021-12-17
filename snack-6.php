@@ -46,7 +46,7 @@ Utilizzare questo array: https://pastebin.com/CkX3680A. Stampiamo il nostro arra
             <p>
                 <?php
                     for($i = 0; $i < count($db[$postsKeys[0]]); $i++){
-                        echo $db[$postsKeys[0]][$i]['name'].$db[$postsKeys[0]][$i]['lastname'].'<br>';
+                        echo $db[$postsKeys[0]][$i]['name'].' '.$db[$postsKeys[0]][$i]['lastname'].'<br>';
                     }
                 ?>
             </p>
@@ -59,7 +59,7 @@ Utilizzare questo array: https://pastebin.com/CkX3680A. Stampiamo il nostro arra
             <p>
                 <?php
                     for($i = 0; $i < count($db[$postsKeys[1]]); $i++){
-                        echo $db[$postsKeys[1]][$i]['name'].$db[$postsKeys[1]][$i]['lastname'].'<br>';
+                        echo $db[$postsKeys[1]][$i]['name'].' '.$db[$postsKeys[1]][$i]['lastname'].'<br>';
                     }
                 ?>
             </p>
