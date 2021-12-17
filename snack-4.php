@@ -4,11 +4,12 @@ Creare un array con 15 numeri casuali, tenendo conto che l'array non dovrà cont
     $arr = [];
 
     for ($i = 0; $i < 15; $i++) {
-        $randomNumber = 0;
+        $randomNumber = rand(1, 15);
 
         if(!in_array($randomNumber, $arr)){
-            $randomNumber = rand(1, 100);
             $arr[] = $randomNumber;
+        } else{
+            $i--;
         }
     }
     var_dump($arr);
