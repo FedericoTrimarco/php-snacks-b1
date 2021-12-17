@@ -46,10 +46,10 @@ Qui l'array di esempio: https://www.codepile.net/pile/R2K5d68z -->
     $postsKeys = array_keys($posts);
     var_dump($postsKeys);
 
-    for ($i = 0; $i < count($posts); $i++) { 
+    for ($i = 0; $i < count($posts); $i++) {
         echo 'DATA '.$postsKeys[$i] .'<br>';
         
-        for ($j = 0; $j < count($posts[$postsKeys[$i]]); $j++) { 
+        for ($j = 0; $j < count($posts[$postsKeys[$i]]); $j++) {
             echo $posts[$postsKeys[$i]][$j]['title'] .'<br>';
             echo $posts[$postsKeys[$i]][$j]['author'] .'<br>';
             echo $posts[$postsKeys[$i]][$j]['text'] .'<br>'.'<br>';
