@@ -1,16 +1,14 @@
 <!-- Snack 4
 Creare un array con 15 numeri casuali, tenendo conto che l'array non dovrà contenere lo stesso numero più di una volta -->
 <?php
-    $arr = [];
+    $numbers = [];
 
-    for ($i = 0; $i < 15; $i++) {
+    while(count($numbers) < 15){
         $randomNumber = rand(1, 15);
 
-        if(!in_array($randomNumber, $arr)){
-            $arr[] = $randomNumber;
-        } else{
-            $i--;
+        if(!in_array($randomNumber, $numbers)){
+            $numbers[] = $randomNumber;
         }
     }
-    var_dump($arr);
+    var_dump($numbers);
 ?>
